@@ -61,10 +61,9 @@ main(int argc, char const *argv[])
     free(real_edges);
     if (incorrect_contains == 0 && incorrect_doesnt_contain == 0) {
         std::cout << "All tests passed" << "\n";
-        // return 0;
+        return 0;
     } else {
         std::cout << "Tests failed " << incorrect_contains << " " << incorrect_doesnt_contain << "\n";
         return 1;
     }
-    return 1;
 }
