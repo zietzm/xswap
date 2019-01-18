@@ -1,5 +1,8 @@
 #include "../lib/roaring.hh"
 
+extern int CHAR_BITS;
+extern unsigned long long int MAX_MALLOC;
+
 struct Edges {
     int** edge_array;
     int num_edges;
